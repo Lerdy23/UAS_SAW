@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peringkat Kualitas Helm</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Peringkat Kualitas Helm</h1>
+    
+    <!-- Form untuk memasukkan data helm -->
+    <form id="helmForm">
+        <!-- Helm A -->
+        <label for="hargaA">Helm A - Harga:</label>
+        <input type="number" id="hargaA" name="hargaA" required>
+        <label for="kualitasA">Helm A - Kualitas:</label>
+        <input type="number" id="kualitasA" name="kualitasA" required>
+        <label for="keamananA">Helm A - Keamanan:</label>
+        <input type="number" id="keamananA" name="keamananA" required>
+
+        <!-- Helm B, Helm C, Helm D, Helm E -->
+        <label for="hargaB">Helm B - Harga:</label>
+        <input type="number" id="hargaB" name="hargaB" required>
+        <label for="kualitasB">Helm B - Kualitas:</label>
+        <input type="number" id="kualitasB" name="kualitasB" required>
+        <label for="keamananB">Helm B - Keamanan:</label>
+        <input type="number" id="keamananB" name="keamananB" required>
+
+        <label for="hargaC">Helm C - Harga:</label>
+        <input type="number" id="hargaC" name="hargaC" required>
+        <label for="kualitasC">Helm C - Kualitas:</label>
+        <input type="number" id="kualitasC" name="kualitasC" required>
+        <label for="keamananC">Helm C - Keamanan:</label>
+        <input type="number" id="keamananC" name="keamananC" required>
+
+        <label for="hargaD">Helm D - Harga:</label>
+        <input type="number" id="hargaD" name="hargaD" required>
+        <label for="kualitasD">Helm D - Kualitas:</label>
+        <input type="number" id="kualitasD" name="kualitasD" required>
+        <label for="keamananD">Helm D - Keamanan:</label>
+        <input type="number" id="keamananD" name="keamananD" required>
+
+        <label for="hargaE">Helm E - Harga:</label>
+        <input type="number" id="hargaE" name="hargaE" required>
+        <label for="kualitasE">Helm E - Kualitas:</label>
+        <input type="number" id="kualitasE" name="kualitasE" required>
+        <label for="keamananE">Helm E - Keamanan:</label>
+        <input type="number" id="keamananE" name="keamananE" required>
+
+        <button type="button" onclick="hitungPeringkat()">Hitung Peringkat</button>
+    </form>
+
+    <!-- Hasil peringkat akan ditampilkan di sini -->
+    <div id="hasilPeringkat"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
